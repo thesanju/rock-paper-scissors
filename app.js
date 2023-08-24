@@ -1,3 +1,10 @@
+let pointsHuman = document.getElementById('humanPoints');
+let pointsComputer = document.getElementById('computerPoints');
+
+let pointsH = 0;
+let pointsC = 0;
+
+
 function rock() {
   const randomNumber = Math.random();
 
@@ -17,11 +24,17 @@ function rock() {
   if (computerMove === 'rock') {
     result = 'Game Tied';
   } else if (computerMove === 'paper') {
-    result = 'Loose';
+    result = 'You Loose';
+    pointsC ++;
   } else if (computerMove === 'scissors') {
-    result = 'Win';
+    result = 'You Win';
+    pointsH ++;
   }
-  alert(`You picked rock computer picked ${computerMove} and you ${result}`)
+
+  pointsHuman.innerHTML = `You: ${pointsH}`;
+  pointsComputer.innerHTML = `Computer: ${pointsC}`;
+
+  alert(`You picked rock computer picked ${computerMove} and ${result}`)
 }
 
 
@@ -42,13 +55,19 @@ function paper() {
   let result = '';
 
   if (computerMove === 'rock') {
-    result = 'Win';
+    result = 'You Win';
+    pointsH ++;
   } else if (computerMove === 'paper') {
     result = 'Game Tied';
   } else if (computerMove === 'scissors') {
-    result = 'Loose';
+    result = 'You Loose';
+    pointsC ++;
   }
-  alert(`You picked paper computer picked ${computerMove} and you ${result}`)
+
+  pointsHuman.innerHTML = `You: ${pointsH}`;
+  pointsComputer.innerHTML = `Computer: ${pointsC}`;
+
+  alert(`You picked paper computer picked ${computerMove} and ${result}`)
 }
 
 function scissors() {
@@ -67,15 +86,21 @@ function scissors() {
 
   let result = '';
 
-  if (computerMove === 'scissor') {
+  if (computerMove === 'paper') {
+    result = 'You Win';
+    pointsH ++;
+  } else if (computerMove === 'scissors') {
     result = 'Game Tied';
-  } else if (computerMove === 'paper') {
-    result = 'Win';
   } else if (computerMove === 'rock') {
-    result = 'Loose';
+    result = 'You Loose';
+    pointsC ++;
   }
-  alert(`You picked scissors computer picked ${computerMove} and you ${result}`)
+
+  pointsHuman.innerHTML = `You: ${pointsH}`;
+  pointsComputer.innerHTML = `Computer: ${pointsC}`;
+
+  alert(`You picked scissors computer picked ${computerMove} and  ${result}`)
 }
 
-
+console.log();
 
