@@ -1,5 +1,6 @@
 let pointsHuman = document.getElementById('humanPoints');
 let pointsComputer = document.getElementById('computerPoints');
+let resultMsg = document.getElementById('message');
 
 let pointsH = 0;
 let pointsC = 0;
@@ -25,16 +26,16 @@ function rock() {
     result = 'Game Tied';
   } else if (computerMove === 'paper') {
     result = 'You Loose';
-    pointsC ++;
+    pointsC++;
   } else if (computerMove === 'scissors') {
     result = 'You Win';
-    pointsH ++;
+    pointsH++;
   }
 
   pointsHuman.innerHTML = `You: ${pointsH}`;
   pointsComputer.innerHTML = `Computer: ${pointsC}`;
 
-  alert(`You picked rock computer picked ${computerMove} and ${result}`)
+  resultMsg.innerHTML = `You picked rock computer picked ${computerMove} and ${result}`;
 }
 
 
@@ -56,18 +57,18 @@ function paper() {
 
   if (computerMove === 'rock') {
     result = 'You Win';
-    pointsH ++;
+    pointsH++;
   } else if (computerMove === 'paper') {
     result = 'Game Tied';
   } else if (computerMove === 'scissors') {
     result = 'You Loose';
-    pointsC ++;
+    pointsC++;
   }
 
   pointsHuman.innerHTML = `You: ${pointsH}`;
   pointsComputer.innerHTML = `Computer: ${pointsC}`;
 
-  alert(`You picked paper computer picked ${computerMove} and ${result}`)
+  resultMsg.innerHTML = `You picked paper computer picked ${computerMove} and ${result}`;
 }
 
 function scissors() {
@@ -88,19 +89,17 @@ function scissors() {
 
   if (computerMove === 'paper') {
     result = 'You Win';
-    pointsH ++;
+    pointsH++;
   } else if (computerMove === 'scissors') {
     result = 'Game Tied';
   } else if (computerMove === 'rock') {
     result = 'You Loose';
-    pointsC ++;
+    pointsC++;
   }
 
   pointsHuman.innerHTML = `You: ${pointsH}`;
   pointsComputer.innerHTML = `Computer: ${pointsC}`;
 
-  alert(`You picked scissors computer picked ${computerMove} and  ${result}`)
+  resultMsg.innerHTML = `You picked scissors computer picked ${computerMove} and  ${result}`;
 }
-
-console.log();
 

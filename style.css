@@ -1,0 +1,88 @@
+*{
+    background-color: rgb(177, 239, 255);
+    font-family: Arial;
+}
+
+.title {
+    position: relative;
+    align-items: center;
+    margin-left: 758px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(124, 16, 16);
+}
+
+.btn-1 {
+    font-family: Arial;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 775px;
+    cursor: pointer;
+}
+
+.btn-2 {
+    font-family: Arial;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.btn-3 {
+    font-family: Arial;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(186, 255, 97);
+    color: rgb(36, 170, 87);
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.btn-1:active, .btn-2:active, .btn-3:active {
+    background-color: brown;
+    width: 101px;
+    height: 41px;
+
+}
+
+#message {
+    font-family: arial;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(28, 94, 47);
+    margin-left: 683px;
+    margin-top: 30px;
+    cursor: text;
+}
+
+#humanPoints {
+    font-family: arial;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(28, 94, 47);
+    margin-left: 920px;
+    margin-top: 30px
+}
+
+#computerPoints {
+    font-family: arial;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(28, 94, 47);
+    margin-left: 920px;
+    margin-top: 30px
+}
