@@ -19,6 +19,7 @@ function rock() {
     computerMove = 'scissors';
   }
   console.log(computerMove);
+  console.log(randomNumber);
 
   let result = '';
 
@@ -102,4 +103,6 @@ function scissors() {
 
   resultMsg.innerHTML = `You picked scissors computer picked ${computerMove} and  ${result}`;
 }
+
+
 
